@@ -2,7 +2,7 @@
 class admin:
     admin_code=""
     dis_customer={}
-    no_of_bikes=10 #initially number of bikes we have
+    no_of_bikes=4 #initially number of bikes we have
     dict_rent={}
     enti=[]
     price={"hour":"5$","day":"20$","week":"60$"}
@@ -19,6 +19,7 @@ class admin:
     @classmethod
     def add_no_of_bikes(cls,numbe):
         cls.no_of_bikes+=numbe
+        return f"{numbe} bikes added sucessfully"
     
     @classmethod
     def display_invent(cls):
